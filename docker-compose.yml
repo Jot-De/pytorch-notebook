@@ -5,7 +5,7 @@ services:
     environment:
       - JUPYTER_TOKEN=passwd # TODO: Change the token
     user: ${MY_UID}:${MY_GID}
-    working_dir: ${HOME}
+    working_dir: /docker_vol
     volumes:
       - /etc/passwd:/etc/passwd:ro
       - /etc/group:/etc/group:ro
